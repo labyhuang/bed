@@ -1,0 +1,43 @@
+{
+  "name": "@bxb/bed",
+  "version": "0.1.7",
+  "description": "BXB Embedded Device Libs",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "gulp test",
+    "pub": "gulp build; npm version patch; git push --tags origin master; npm publish --registry http://192.168.1.250:4873"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.1.2",
+    "del": "^3.0.0",
+    "eslint": "^3.19.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-mocha": "^6.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-remove-code": "^3.0.2",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.0",
+    "uglify-es": "^3.3.9"
+  },
+  "dependencies": {
+    "@bxxxxx/proto": "^1.1.2",
+    "debug": "^3.1.0",
+    "js-sha3": "^0.8.0",
+    "net-keepalive": "^1.2.1",
+    "protobufjs": "^6.8.6"
+  }
+}
