@@ -1,0 +1,2 @@
+# bed
+BED protocol example
