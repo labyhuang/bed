@@ -49,7 +49,7 @@ const dev = await bed.create({address: '192.168.1.223', timeout: '10000'})
 
 ### event
 
-** `message` ** 收到 message
+**`message`** 收到 message
 
 ```javascript
 const bed = require('@bxxxxx/bed')
@@ -107,9 +107,11 @@ await monitor.exec('connectStream', {uri: 'rtsp://192.168.1.225:8557/h264'})
 ```
 
 ### event
-** `connect` ** 已建立連線
-** `close` ** 已失去連線
-** `event` ** 收到 device event 事件
+**`connect`** 已建立連線
+
+**`close`** 已失去連線
+
+**`event`** 收到 device event 事件
 
 ```javascript
   const dev = await bed.create({address: '169.254.0.20', timeout: 20 * 1000})
@@ -158,10 +160,10 @@ async function main () {
     console.log(`on event: `, data)
   })
 
-  dev.exec('ioTest').then(res => {
-    console.log(`exec result: `, res)
-    process.exit()
-  })
+  console.log(await dev.exec('ioTest'))
+
+  process.exit()
+
 }
 ```
 
